@@ -1,0 +1,101 @@
+# robots.txt — SEO Rank Playbook Template
+# Adapt this for your site. Replace "your-site.com" with your actual domain.
+# This file explicitly welcomes AI/LLM crawlers that feed ChatGPT, Perplexity,
+# Claude, and Google AI Overviews. Do not block them.
+
+# -----------------------------------------------
+# Standard search engine crawlers
+# -----------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+Disallow: /gated-path/
+Disallow: /app/
+Disallow: /admin/
+Disallow: /apply/
+Disallow: /qualify/
+Disallow: /thank-you/
+Disallow: /onboarding/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /gated-path/
+Disallow: /app/
+Disallow: /admin/
+Disallow: /apply/
+Disallow: /qualify/
+Disallow: /thank-you/
+Disallow: /onboarding/
+
+# -----------------------------------------------
+# Social media preview crawlers (always allow)
+# -----------------------------------------------
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# -----------------------------------------------
+# AI / answer-engine crawlers — explicitly welcomed
+# Blocking these means no AI citations.
+# These bots feed: ChatGPT (OAI-SearchBot),
+# Perplexity, Claude, and Google AI Overviews.
+# -----------------------------------------------
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# -----------------------------------------------
+# Directory/pSEO: protect crawl budget
+# Disallow URL variants that don't add indexable value
+# -----------------------------------------------
+
+# Uncomment the lines below if your site has
+# search, sort, or filter URL parameters:
+# User-agent: *
+# Disallow: /search/
+# Disallow: /*?sort=
+# Disallow: /*?filter=
+# Disallow: /*?page=
+
+# -----------------------------------------------
+# Default catch-all
+# -----------------------------------------------
+
+User-agent: *
+Allow: /
+Disallow: /gated-path/
+Disallow: /app/
+Disallow: /admin/
+Disallow: /apply/
+Disallow: /qualify/
+Disallow: /thank-you/
+Disallow: /onboarding/
+
+# -----------------------------------------------
+# Sitemap and LLM summary
+# -----------------------------------------------
+
+Sitemap: https://your-site.com/sitemap.xml
+
+# LLM/AI model-truth summary: https://your-site.com/llms.txt

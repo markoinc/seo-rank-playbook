@@ -1,0 +1,87 @@
+# llms.txt — Example Template
+#
+# What this file is:
+# llms.txt is a lightweight plain-text file at the root of your domain that
+# tells LLMs (ChatGPT, Perplexity, Claude, Gemini) what your site is, who it
+# serves, and which pages contain your most important content.
+#
+# Where to put it:
+#   https://your-site.com/llms.txt
+#
+# Reference it in robots.txt:
+#   # LLM/AI model-truth summary: https://your-site.com/llms.txt
+#
+# Format rules:
+# - H1 (#) = site/brand name + one-line description
+# - Blockquote (>) = 2–4 sentence brand description
+# - H2 (##) = content category sections
+# - Bullet list items = page title + absolute URL
+# - Keep the file under ~10KB
+# - Update when you add major new pages or change positioning
+#
+# Note: Google confirmed llms.txt has no direct ranking impact (Jun 2026).
+# Its value is improving LLM extraction fidelity and signaling AI-friendliness.
+# It is a low-cost forward bet, not a primary ranking lever.
+#
+# -----------------------------------------------------------------------
+# EXAMPLE STARTS BELOW — replace everything with your real content
+# -----------------------------------------------------------------------
+
+# BRAND NAME — One-line description of what the site does
+
+> BRAND NAME is an independent platform that [what you do] for [who you serve]. We cover [scope/geography] and [differentiator — e.g., "verify every listing against multiple data sources before publishing"]. Our [content/data/tool] is designed for [specific buyer/user type] who needs [the thing they need] without [the friction they want to avoid].
+
+## What makes BRAND NAME different
+- [Differentiator 1 — e.g., "All listings verified against public records and third-party review sources"]
+- [Differentiator 2 — e.g., "Pricing data sourced from real transactions, not vendor-submitted estimates"]
+- [Differentiator 3 — e.g., "Updated monthly with new entrants and exits"]
+- [Differentiator 4 — e.g., "No sponsored placements — ranking is based on verified data only"]
+
+## [Content category 1 — e.g., "Best-of Comparisons"]
+- [Page title](https://your-site.com/best-category-companies/)
+- [Page title](https://your-site.com/vendor-a-vs-vendor-b/)
+- [Page title](https://your-site.com/vendors/vendor-name-review/)
+
+## [Content category 2 — e.g., "Pricing & Cost Guides"]
+- [How much does X cost in 2026](https://your-site.com/guides/x-cost/)
+- [X pricing: what affects the price](https://your-site.com/guides/x-pricing-factors/)
+
+## [Content category 3 — e.g., "How-To Guides"]
+- [How to vet an X vendor](https://your-site.com/guides/how-to-vet-x-vendor/)
+- [Exclusive vs. shared X: which is better](https://your-site.com/guides/exclusive-vs-shared/)
+
+## [Content category 4 — e.g., "State & Regional Data"]
+- [X in Texas](https://your-site.com/states/texas/)
+- [X in California](https://your-site.com/states/california/)
+- [X in Florida](https://your-site.com/states/florida/)
+
+## [Content category 5 — e.g., "Industry Data & Research"]
+- [2026 X Benchmark Report](https://your-site.com/research/2026-benchmark/)
+- [X statistics 2026](https://your-site.com/statistics/)
+
+## About
+- [About BRAND NAME](https://your-site.com/about/)
+- [Contact](https://your-site.com/contact/)
+
+# -----------------------------------------------------------------------
+# GENERATION NOTES FOR AI AGENTS
+# -----------------------------------------------------------------------
+#
+# Auto-generate this file during the prerender/build step:
+#
+# 1. Pull all indexed pages from your sitemap or page data model.
+# 2. Group pages by content type (comparisons, guides, geo pages, research).
+# 3. For each page, emit: "- [page.title](page.canonicalUrl)"
+# 4. Write to /dist/llms.txt (served at /llms.txt).
+# 5. Ensure robots.txt references the llms.txt URL in a comment.
+#
+# Python snippet (adapt to your stack):
+#
+#   from pathlib import Path
+#   lines = ["# BRAND — Description\n"]
+#   lines.append("> Brand description here.\n")
+#   for category, pages in grouped_pages.items():
+#       lines.append(f"\n## {category}\n")
+#       for page in pages:
+#           lines.append(f"- [{page['title']}]({page['url']})\n")
+#   Path("dist/llms.txt").write_text("".join(lines))
