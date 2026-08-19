@@ -1,8 +1,10 @@
-# Keyword Research & Intent Mapping
+# Market, Keyword & Competitor Research
 
-**Purpose:** Map every keyword in your niche to an intent bucket before writing a single page. The bucket drives the page type, the CTA density, the content depth, and ultimately the ranking strategy. Without this map, you build pages that compete with each other, miss the highest-ROI clusters, and waste crawl budget on terms that will never convert.
+**Purpose:** Size the market, map the competitive landscape, and assign every keyword to an intent bucket — before writing a single page. This is the research phase: you decide whether the niche is winnable, who you're up against, what you must build to beat them, and which clusters have the highest ROI. Skip it and you build pages that compete with each other, miss the best clusters, and waste crawl budget on terms you can't rank for.
 
-**When to use:** At project start, before any architecture decisions. Revisit every 90 days using GSC data to catch rising long-tails.
+**When to use:** At project start, before any architecture decisions. Revisit every 90 days using GSC data to catch rising long-tails and competitor moves.
+
+**Covers:** market sizing & demand, competitor analysis (keyword gaps + authority landscape), SERP analysis (what's ranking and what it takes to beat it), keyword discovery & AI-search-volume, and intent bucketing.
 
 ---
 
@@ -16,7 +18,13 @@
 
 4. **Pull competitor gaps.** Run 5–6 competitors through the DataForSEO competitor ranked-keywords endpoint. Every term they rank for that you don't is a gap. These gaps often surface entire topic clusters you missed.
 
-5. **Bucket by intent.** Assign every keyword to exactly one bucket:
+5. **Map the competitor authority landscape.** For those same 5–6 competitors pull: domain rating/authority, referring-domain count, number of ranking keywords, and estimated organic traffic. This tells you *realistically* how hard the niche is and where the soft spots are. Read it as: if the top of the SERP is DR20 thin content, on-page alone can win; if it's DR70 with thousands of backlinks, you need an off-page plan and a longer runway (or a lower-KD sub-niche). Note each competitor's strongest cluster (where they're strong = avoid head-on; where they're thin = your wedge).
+
+6. **Size the market.** Sum monthly volume across the whole keyword set (all variants + geos) = total addressable search demand. Layer on: seasonality/trend (is demand rising, flat, or seasonal?), geo concentration (which metros/states hold the demand — pull volume at national + metro level, never state, which returns null), and AI-search demand (how much of the intent has moved to ChatGPT/Perplexity). Decide go/no-go and where to concentrate.
+
+7. **Run SERP analysis on the priority terms.** For each top-priority keyword, inspect the live top-10 results and record: the dominant **content type/format** (money page vs. listicle vs. guide vs. comparison vs. directory), the **depth** (word count / sections you must match or beat), which **SERP features** appear (AI Overview, People-Also-Ask, featured snippet, local pack, reviews), and the **schema** the ranking pages use. This is your brief: it defines exactly what a page must be to displace what's there. If AI Overviews/PAA dominate, prioritize answer-first, schema-rich content.
+
+8. **Bucket by intent.** Assign every keyword to exactly one bucket:
 
    | Bucket | Description | Page goal |
    |--------|-------------|-----------|
@@ -27,11 +35,11 @@
    | `guide` | Informational/definitional — "how to", "what is", "cost of" | Depth, E-E-A-T, feeds AI Overviews |
    | `state` | Geo-modifier ("product + city/state") | Programmatic long-tail; one page per geo |
 
-6. **Score and prioritize.** Within each bucket, rank by: KD 0 + AI volume > KD 0 + no AI volume > KD ≤4 + any volume > KD 5–20. High CPC + low KD = organic gold (paid-ad-dominated with no organic content — fill the gap).
+9. **Score and prioritize.** Within each bucket, rank by: KD 0 + AI volume > KD 0 + no AI volume > KD ≤4 + any volume > KD 5–20 — cross-checked against the SERP-analysis reality (a low KD score is a lie if the live SERP is all high-authority incumbents). High CPC + low KD = organic gold (paid-ad-dominated with no organic content — fill the gap).
 
-7. **Set build order.** Build pages in this sequence: proven-converting terms (GSC historical data, even at weak positions) → BOFU money + comparison/vendor pages → geo depth (state/city programmatic) → informational authority (guides).
+10. **Set build order.** Build pages in this sequence: proven-converting terms (GSC historical data, even at weak positions) → BOFU money + comparison/vendor pages → geo depth (state/city programmatic) → informational authority (guides).
 
-8. **Map to page types for architecture.** Every keyword bucket must map to a URL pattern before you build. Comparison/vendor terms → `/compare/` or `/vendors/`. Geo terms → `/[primary-keyword]/[state]/`. Guides → `/guides/`. No keyword should live at an ambiguous URL.
+11. **Map to page types for architecture.** Every keyword bucket must map to a URL pattern before you build. Comparison/vendor terms → `/compare/` or `/vendors/`. Geo terms → `/[primary-keyword]/[state]/`. Guides → `/guides/`. No keyword should live at an ambiguous URL.
 
 ---
 
@@ -49,6 +57,9 @@
 | AI volume > Google volume | GEO play flag | Target with AI-first content structure (directAnswer first) |
 | Surface-form expansion minimum | 7 axes | Abbreviation, synonym, modifier, intent, jargon, brand, AI-query |
 | Competitor gap pull | 5–6 competitors | Every ranked term they have that you lack = gap page |
+| Competitor authority read | DR + ref-domains + traffic | DR≤20 thin SERP = on-page can win; DR70+ = need off-page + runway |
+| Total addressable demand | Sum all variant + geo volumes | Go/no-go signal; 30K–100K aggregate = viable pSEO play |
+| SERP analysis | Top 10 per priority term | Record content type, depth-to-beat, SERP features, schema used |
 
 ---
 
@@ -57,7 +68,10 @@
 - [ ] Seeds pulled from DataForSEO `keyword_suggestions` (not `keyword_ideas`)
 - [ ] AI-search-volume column populated alongside Google volume for every seed
 - [ ] Surface-form variant expansion completed across all 7 axes
-- [ ] Competitor ranked-keywords pulled for ≥5 competitors
+- [ ] Competitor ranked-keywords pulled for ≥5 competitors (gap list built)
+- [ ] Competitor authority landscape mapped (DR, ref domains, traffic, strongest cluster each)
+- [ ] Market sized: total addressable demand summed + seasonality/geo concentration noted → go/no-go
+- [ ] SERP analysis run on priority terms (content type, depth-to-beat, SERP features, schema)
 - [ ] Every keyword assigned to exactly one intent bucket
 - [ ] Build order documented: proven converters → BOFU → geo → guides
 - [ ] High-CPC + low-KD terms flagged as priority

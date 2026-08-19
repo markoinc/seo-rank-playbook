@@ -14,7 +14,7 @@
 2. **Brand last.** Brand name always goes at the end, separated by ` | `. Never sandwich brand between keyword and description.
 3. **30–65 characters total.** Below 30: you're leaving ranking signal on the table. Above 65: Google rewrites the title, usually badly.
 4. **Meta description: 70–160 chars (target ≤ 155).** The hard max is 160 chars; truncation at 155 prevents mid-sentence cuts that make the snippet read as broken.
-5. **Meta description = a human pitch, not keyword stuffing.** It's a CTR signal to the user, not a ranking signal to Google. Write the value prop + implied action ("Find out how..." / "See why..." / "Compare the top...").
+5. **Meta description = target keyword once + a human pitch.** It's a CTR signal, not a ranking signal — but Google **bolds the query terms it matches** in the snippet, so lead with the exact target keyword (once, naturally), then the value prop + implied action ("Find out how..." / "See why..." / "Compare the top..."). Keyword-matched snippets stand out in the results and lift click-through. Include the keyword once; never stuff a list of keywords.
 6. **Unique per page.** No two pages on the site share a title or meta description. Duplicate titles tell Google the pages cover the same topic and trigger cannibalization.
 7. **One H1 per page.** H1 = the exact target keyword, matching the search intent 1:1. Do not repeat the title tag verbatim — the H1 is a variation, not a copy.
 
@@ -41,12 +41,13 @@ Enterprise Project Management Software | [Brand]
 
 **Meta description formula:**
 ```
-[Outcome/result the buyer wants]. [Your key differentiator or proof point]. [Implied CTA — "See how it works" / "Get started today" / "Find out more"].
+[Primary keyword phrased naturally] — [outcome the buyer wants]. [Key differentiator or proof point]. [Implied CTA — "See how it works" / "Get started today"].
 ```
+(Lead with the exact keyword so Google bolds it in the snippet, then sell the click.)
 
-**Example:**
+**Example** (target keyword = *car accident leads for attorneys*):
 ```
-Get exclusive, verified leads delivered directly to your firm. Real-time delivery, no contracts, no shared leads. See how it works.
+Exclusive car accident leads for attorneys, delivered in real time to one firm. Verified, never shared, no contracts. See how it works.
 ```
 
 **H1 formula:**

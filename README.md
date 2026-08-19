@@ -29,7 +29,7 @@ Read [`AGENT.md`](AGENT.md) first — it's your operating manual — then [`play
 | # | File | Covers |
 |---|------|--------|
 | 00 | `00-START-HERE.md` | The two runbooks + master order of operations |
-| 01 | `01-keyword-research-and-intent.md` | Keyword discovery, intent bucketing, KD, AI-visibility read |
+| 01 | `01-keyword-research-and-intent.md` | Market sizing, competitor analysis (gaps + authority), SERP analysis, keyword discovery, intent bucketing |
 | 02 | `02-architecture-and-topical-map.md` | URL tree, hub-and-spoke, one-concept-per-URL |
 | 03 | `03-site-build-and-tech-stack.md` | Stack choice, repo layout, the per-page data model |
 | 04 | `04-on-page-seo.md` | Titles, metas, H1–H6, content depth, E-E-A-T |

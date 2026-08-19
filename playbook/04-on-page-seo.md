@@ -16,8 +16,9 @@
 
 ### 2. Write the meta description
 - Target 150–160 characters; hard cap at 155 to prevent mid-sentence truncation.
-- Write for CTR, not keyword stuffing — include the core value proposition and an implied call to action.
-- Meta descriptions are not a ranking factor; Google rewrites programmatic metas. Focus manual effort on homepage + top 20 high-impression pages.
+- **Include the exact target keyword once, early, phrased naturally.** The meta description is not a *ranking* factor, but Google **bolds the words that match the user's query** in the SERP snippet — a keyword-matched snippet stands out and measurably lifts click-through. Include it once; do not stuff.
+- Then write for CTR: the core value proposition + an implied call to action ("See how it works", "Compare the top…"). Keyword first, pitch second.
+- Google rewrites metas it dislikes (especially thin/duplicate programmatic ones). Hand-write the homepage + top ~20 high-impression pages; give every other page a keyword-first templated meta.
 
 ### 3. Place one H1 per page
 - Every page has exactly one H1 containing the primary target keyword.
