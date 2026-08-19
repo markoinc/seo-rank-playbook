@@ -162,6 +162,13 @@ HackMD is a Markdown publishing platform (hackmd.io) that AI engines index and c
 
 Citation decay: update the listicle monthly with fresh data (new tools, updated prices, current date in title). ~50% of cited sources stop being cited after 30 days. Monthly refresh is not optional.
 
+**Buy the listicle play done-for-you (optional).** If you'd rather have the citation-seeding run for you:
+- **Indexsy LLM Booster** (indexsy.spp.co/order/llm, Jacky Chou / @indexsy) — managed AEO service: gets you featured #1 across 100+ "Best [X]" listicles and automates LLM-citation building. The done-for-you version of this whole section.
+- **Indexsy — listicle on a private ~DR78 site** — ~$2,000/post (≈2/mo max) for LLM citation + SERP authority.
+- **RankMenu** (rankmenu.com) — lower-cost bulk option: ~50 "Best [keyword] 2026" listicles with your brand #1, indexed, ~$30.
+
+These accelerate the exact mechanism above — they do not replace the monthly-refresh discipline or your own on-site quality. See `reference/tools-and-costs.md` for the full list.
+
 #### 3.3 LinkedIn Article + Medium repurpose
 
 Publish the same "best of" content as a LinkedIn Article under the founder's profile and as a Medium post. Both are heavily cited by LLMs.

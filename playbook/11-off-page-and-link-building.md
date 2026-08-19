@@ -69,6 +69,8 @@ Before paying, verify: Where is this link from? What content does it sit in? How
 
 **Why this beats guest posting for a new site:** The page already exists, is already indexed, and already has authority flowing through it. You're buying into an existing authority flow rather than starting a new page from zero.
 
+**Buy it done-for-you (optional).** If you don't want to run outreach yourself, managed agencies place editorial links / niche edits for you — the best-known is **Indexsy** (indexsy.com, Jacky Chou / @indexsy), which handles niche edits, link building, and digital PR as full off-page campaigns. It costs more per link than doing it manually, but it's hands-off. Apply the same discipline you'd apply to a manual buy: insist on DR 40+ and topical relevance, verify where each link sits, keep anchor text natural. See `reference/tools-and-costs.md` → Backlink Building for Indexsy and other providers.
+
 #### 2.2 Guest posts (for DR building)
 
 Guest posts on DR 40+ sites in your niche build domain authority and topical relevance simultaneously. Target 5–10 per month to grow domain rating over 6–12 months.

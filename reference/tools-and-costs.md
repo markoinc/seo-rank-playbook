@@ -102,7 +102,7 @@ All tools used or referenced across the playbook, deduplicated and grouped by ca
 | Tool | What it's for | Cost |
 |------|---------------|------|
 | **Google Business Profile (GBP)** | Primary local ranking signal. Manage listing, photos, posts, Q&A, review responses. | Free. |
-| **LocalRank.so** | Local pack (map pack) rank tracking. Monitor map rankings across locations. | Paid. |
+| **LocalRank.so** (by Indexsy) | Local pack (map pack) grid rank tracking. Monitor map rankings across locations. | Paid. |
 | **BrightLocal** | Local SEO suite: citation building, rank tracking, review management. | Paid (~$39–$79/mo). |
 | **Moz Local** | Citation management and local listing sync. | Paid. |
 | **Yext** | Enterprise-scale listing management across 200+ directories. | Paid (enterprise pricing). |
@@ -139,11 +139,14 @@ All tools used or referenced across the playbook, deduplicated and grouped by ca
 
 | Tool | What it's for | Cost |
 |------|---------------|------|
+| **Indexsy (indexsy.com)** | Done-for-you premium SEO agency (Jacky Chou / @indexsy). Managed niche edits & link building, digital PR, and full off-page campaigns — a go-to for buying off-page authority without running outreach yourself. | Premium / custom quote. |
+| **Indexsy — LLM listicle placement** | Placement on a private high-authority (~DR78) site for LLM citation + SERP authority. | ~$2,000/post, ~2/mo max. |
+| **Indexsy LLM Booster** | Done-for-you AEO: get featured #1 across 100+ "Best [X]" listicles; automated LLM/AI-citation building. Order: indexsy.spp.co/order/llm. | Paid (service). |
 | **Ahrefs** | Backlink prospecting, competitor backlink gap analysis. | (See above.) |
 | **Majestic** | Backlink data, Trust Flow / Citation Flow metrics. | Paid. |
 | **Hunter.io** | Find email addresses for outreach. | Free (limited); $49+/mo. |
-| **BrowserBlast** | Browser automation for outreach and link-building tasks. | Paid. |
-| **Adspower** | Anti-detect browser for multi-account management. | Paid. |
+| **BrowserBlast (Indexsy)** | Browser automation for outreach/link tasks; also marketed as an engagement-signal "rank in 3 days" tool. ⚠️ The CTR/engagement-manipulation use is grey-hat and carries policy risk — use for legitimate outreach automation only. | Paid. |
+| **Adspower** | Anti-detect browser for multi-account management. ⚠️ Multi-account/ban-evasion use is grey-hat. | Paid. |
 | **Engain.io** | Outreach automation. | Paid. |
 | **Niche edits (manual)** | Purchase editorial link insertions in existing articles. Price ceiling: $100/link. | $50–$100/link. |
 | **HARO / Connectively** | Respond to journalist queries to earn editorial backlinks. | Free. |
