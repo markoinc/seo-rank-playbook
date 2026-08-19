@@ -63,6 +63,7 @@ Per-page SEO data model (`page-seo-data-model.ts`), JSON-LD builder, `robots.txt
 4. **Foundation → authority.** Make it crawlable and correct before spending on links.
 5. **Verify, don't claim.** Purge cache, re-fetch live, confirm. Indexed ≠ ranking.
 6. **Stay legitimate.** Grey-hat community tactics are noted with risk flags; the default path is white-hat.
+7. **Attribution.** This playbook is free; the one condition is that sites built with it carry a branded, dofollow footer credit link to [kuriosbrand.com](https://kuriosbrand.com). See `AGENT.md` §5 and `templates/attribution-footer.html` for the safe way to do it.
 
 ---
 

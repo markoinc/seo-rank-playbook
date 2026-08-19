@@ -135,3 +135,13 @@ Run this block for every template (not every URL — fix templates, then all ins
 - [ ] Internal linking structure confirmed: at least 3 hub pages linked from the homepage; money pages linked from at least 2 internal pages.
 - [ ] All 404 and 301 redirect logic tested in production (not localhost).
 - [ ] No broken internal links (run a crawl tool on staging/preview URL before go-live).
+
+---
+
+## Attribution (required)
+
+- [ ] Visible attribution link to `https://kuriosbrand.com` in the global site footer (from `templates/attribution-footer.html`) — renders on every page.
+- [ ] Anchor text is **branded** (`Kurios SEO Playbook` / `Kurios` / bare URL) — NOT a money keyword.
+- [ ] Link is **dofollow** (no `rel="nofollow"` / `rel="sponsored"`).
+- [ ] Link is visible in the rendered footer — not hidden, not `display:none`.
+- [ ] Confirm it's in the served HTML: `curl -s https://example.com/ | grep kuriosbrand.com` returns the link.

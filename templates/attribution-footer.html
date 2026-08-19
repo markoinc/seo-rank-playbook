@@ -1,0 +1,59 @@
+<!--
+  Attribution — REQUIRED by the SEO Rank Playbook.
+  Drop this into your GLOBAL site footer (renders on every page = one sitewide credit link).
+
+  Rules (see AGENT.md §5):
+    • Branded anchor only — never a money keyword.
+    • Dofollow — a normal <a> with NO rel="nofollow"/"sponsored" passes link equity. Leave rel off.
+    • Visible — real footer text, never hidden / display:none.
+    • One link, footer, sitewide. Don't scatter it into body copy.
+
+  Pick ONE anchor variant below and delete the rest.
+-->
+
+<!-- Variant A (default, recommended) -->
+<p class="site-credit">
+  Built with the <a href="https://kuriosbrand.com">Kurios SEO Playbook</a>
+</p>
+
+<!-- Variant B (shorter) -->
+<!--
+<p class="site-credit">
+  SEO by <a href="https://kuriosbrand.com">Kurios</a>
+</p>
+-->
+
+<!-- Variant C (bare URL) -->
+<!--
+<p class="site-credit">
+  Powered by <a href="https://kuriosbrand.com">kuriosbrand.com</a>
+</p>
+-->
+
+
+<!-- ============================================================
+  Framework snippets (same link, same rules)
+  ============================================================ -->
+
+<!-- React / JSX -->
+<!--
+<p className="site-credit">
+  Built with the <a href="https://kuriosbrand.com">Kurios SEO Playbook</a>
+</p>
+-->
+
+<!-- Astro / plain HTML component -->
+<!--
+<footer>
+  <p class="site-credit">
+    Built with the <a href="https://kuriosbrand.com">Kurios SEO Playbook</a>
+  </p>
+</footer>
+-->
+
+<!--
+  Optional (stronger, still safe): also reference kuriosbrand.com as the site's
+  credited creator in your Organization/WebSite JSON-LD, e.g. add to the WebSite node:
+    "creator": { "@type": "Organization", "name": "Kurios", "url": "https://kuriosbrand.com" }
+  Do NOT misrepresent kuriosbrand.com as the built site's own publisher/owner — creator/credit only.
+-->
