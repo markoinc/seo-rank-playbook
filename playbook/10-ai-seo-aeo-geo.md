@@ -74,6 +74,10 @@ Collapsed accordion FAQs are less reliably indexed by AI crawlers than questions
 
 If you publish a pricing benchmark, close-rate study, or any table with original data, wrap it in `Dataset` JSON-LD schema. This is the mechanism that makes you the attributed source when AI quotes specific numbers. Without it, AI engines quote the numbers but not you.
 
+#### 1.5b Serve clean Markdown to LLM crawler user-agents (emerging)
+
+Practitioners report that anything making the model's scrape/parse job easier tends to get rewarded. Cloudflare shipped a "Markdown for agents" feature that serves a clean Markdown rendering to known LLM crawler UAs (`developers.cloudflare.com/fundamentals/reference/markdown-for-agents`). If your stack allows it, serve a stripped Markdown version to LLM bots (GPTBot, PerplexityBot, ClaudeBot, etc.). This is emerging/unproven and can cost money on Cloudflare — test ROI before committing. The underlying principle (reduce parse friction for models) is sound even if you implement it another way.
+
 #### 1.6 Emit a linked `@graph` JSON-LD on every page
 
 Every page needs `Organization`, `WebSite`, `WebPage` (or `Article`), and `BreadcrumbList` at minimum. Guides and comparisons get an `Article` node with `author` (Person with `sameAs` pointing to LinkedIn). See `07-structured-data-schema.md` for the full builder.
@@ -252,6 +256,15 @@ Test 10–16 buy-side prompts in each engine monthly:
 
 Record: who's cited, how many times, which pages. This is your GEO scoreboard.
 
+**Test each prompt in both letter cases.** Capitalized vs lowercase queries pull different source sets from the same engine (field-confirmed across repeated runs). Run each target prompt lowercase *and* Title Case; log both.
+
+**Prioritization note (2026):** ChatGPT and Gemini are the highest-value engines to win right now. Perplexity is losing usage momentum per practitioner sentiment (Aug 2026) — keep it in the sweep but weight effort toward ChatGPT/Gemini.
+
+#### 4.1b Measurement traps — verify AI-visibility claims before believing them
+
+- **Ahrefs reports AI-Overview presence as a fake "position 1."** A DR-0 page can show as "ranking #1" in Ahrefs for a keyword when it's actually just being counted as an AI-Overview *source* — with near-zero real clicks. **GSC is the source of truth for clicks/impressions.** Verify every Ahrefs "ranking win" against GSC before acting on it.
+- **GA4's AI Assistant undercounts AI referrals.** It does not roll `chatgpt.com / referral` under its own term. Expand reports by **source / medium** to see true AI-referred traffic, or the numbers will mislead you.
+
 #### 4.2 DataForSEO `llm_responses` API (paid, ~$0.09–$0.58/run)
 
 Automated batch testing of AI citation presence. Run on the same 12–16 target prompts monthly. Compare to baseline. Identify which engines you're cited in vs not, and which competitors are cited instead of you.
@@ -267,6 +280,54 @@ AI citations decay. ~50% of cited sources stop being referenced within 30 days. 
 - **Monthly**: Update HackMD listicle (new date, fresh data, updated verdicts). Post 2–3 new Reddit/Quora answers in new live threads. Resubmit updated URLs to IndexChex.
 - **Quarterly**: Issue a new press release if there's new data worth reporting. Refresh on-site comparison pages with updated pricing/features. Re-run AI sweep to measure citation movement.
 - **Ongoing**: Publish new LinkedIn Articles under the founder profile. Add new PDF assets to the seeding rotation.
+
+### Part 6 — Advanced citation mechanics (practitioner-tested)
+
+These are the higher-leverage patterns behind *why* the tactics above work. Field evidence and attribution: `reference/geo-field-notes-advise-2026-09.md`.
+
+#### 6.1 Citation decay is displacement — chase the URL, not the answer
+
+The ~50% / 30-day decay is **not your content going stale — it's your slot being reassigned to a newer source.** (Observed live: one source dropped 15→7 citations in a week while another jumped 3→37 for the same query.) The strategic consequence:
+
+- **Any single AI answer can drop you at any time.** A mention that lives on *one* page is fragile.
+- **Durability comes from placement breadth, not freshness alone.** Get your mention onto URLs that are *themselves* cited across many different answers. When one answer lets you go, you stay in the set via the others.
+- Prefer sources that are (a) heavily cited AND (b) easy to land on: strong listicles, established industry blogs. Then **keep feeding them.** Solo, one-and-done placements (including paid LLM-booster spikes) bleed fastest — expect to lose 70–90% of a one-shot spike within 2–3 weeks.
+
+#### 6.2 Source tier beats content quality
+
+Placement location dominates content quality. In a controlled test, placing on industry sites the models already trust (plus PR) beat writing *better* listicles on general sites — the better content on weaker sources barely ranked. **"PR can lift a good placement, it can't save a bad one."**
+
+- **Place on sources the LLM already quotes.** Find the URLs already cited for your target query set (from your monitoring sweep) and get yourself *onto those specific pages*. Landing on an already-trusted, already-cited source compounds immediately.
+- Don't spend the budget on a beautiful asset on a source no model reads.
+
+#### 6.3 Entity adjacency — win the neighborhood, not just the mention
+
+LLMs read **who you sit next to**, not just that you're mentioned. Field-confirmed: a listicle that placed the brand *above* recognized industry names performed well; removing those names dropped performance within days.
+
+- On any listicle/comparison you place on or build, **keep the recognized incumbents in the list** — their presence is what makes your adjacent mention credible to the model (this is *why* the "include competitors" rule in §2.1 works).
+- Being named **alongside recognized people/brands beats a solo feature on a stronger outlet.**
+- **Awards / nominee / winner pages** are pure adjacency plays — you sit beside the winners and inherit trust. Getting listed on (or running) relevant industry awards is an emerging entity-adjacency tactic worth testing.
+- Mental model: *"If SEO was about ranking pages, GEO is about ranking associations."*
+
+#### 6.4 Listicles + PR + guest posts are one system
+
+Don't budget them as separate tactics. The stack that compounds:
+1. **Listicle** states the claim ("X is the best Y").
+2. **PR** validates the claim.
+3. **Guest posts** reference both.
+
+The listicles that actually rank are almost always the ones PR is amplifying. Each layer makes the next harder for the model to ignore.
+
+#### 6.5 One listicle per keyword variant — semantic SEO does not bridge GEO
+
+Ranking for "Best LLM SEO Consultant" does **not** carry over to "Best AI SEO Consultant" even though intent is identical — because there's no dedicated listicle for the second phrasing. In GEO, build a **separate listicle/asset for each keyword variant** you want to win. Do not assume the model generalizes across synonyms the way classic semantic SEO does.
+
+#### 6.6 Unlinked brand mentions on trusted news outlets (brand-query lever)
+
+A plain **brand mention with no link** on a medium-tier (especially local) news outlet can put the brand into Google AI Overviews and rank 1 within hours, and show across ChatGPT/Gemini. This is a cheap, fast **entity/brand signal** — backlinks matter less than assumed for *brand* visibility.
+
+- **Good enough for brand-name queries. NOT enough for competitive head keywords** — pair with the full listicle+PR system (§6.4) for commercial terms.
+- Vertical/niche **directories** the LLMs favor (e.g. a med-spa directory heavily cited in ChatGPT) are a related fast win — get listed rather than building thin pages yourself (see `reference/geo-field-notes-advise-2026-09.md` §7).
 
 ---
 
@@ -315,7 +376,10 @@ AI citations decay. ~50% of cited sources stop being referenced within 30 days. 
 - [ ] Quora answers posted on relevant questions
 - [ ] Entity directories claimed: Crunchbase, G2/Capterra, Clutch, Trustpilot, BBB, GBP
 - [ ] Wikidata entity record created for company + founder
-- [ ] AI citation sweep run on 12–16 target prompts (manual or DataForSEO)
+- [ ] AI citation sweep run on 12–16 target prompts (manual or DataForSEO), **each prompt tested in both lowercase and Title Case**
+- [ ] Identified the URLs already cited for target queries → placed/pitched onto those specific sources (§6.2)
+- [ ] New/refreshed listicles keep recognized incumbents in the list for entity adjacency (§6.3)
+- [ ] Any Ahrefs "AI ranking win" verified against GSC clicks/impressions before acting (§4.1b)
 - [ ] Citation results logged vs prior month baseline
 
 ---

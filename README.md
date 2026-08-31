@@ -51,7 +51,7 @@ Per-page SEO data model (`page-seo-data-model.ts`), JSON-LD builder, `robots.txt
 `pre-launch-checklist.md`, `on-page-checklist.md`, `technical-crawl-checklist.md`, and the `ranking-audit-scorecard.md`.
 
 ### `reference/` — fast lookups
-`tools-and-costs.md` (every tool named, what it's for, cost) and `thresholds-cheatsheet.md` (every hard number in one table).
+`tools-and-costs.md` (every tool named, what it's for, cost), `thresholds-cheatsheet.md` (every hard number in one table), and `geo-field-notes-advise-2026-09.md` (attributed practitioner intel on AI citation mechanics — the evidence log behind playbook §10 Part 6).
 
 ---
 

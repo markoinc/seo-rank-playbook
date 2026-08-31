@@ -80,6 +80,8 @@ All tools used or referenced across the playbook, deduplicated and grouped by ca
 | **Notion Sites** | Publish public Notion pages as web content. Indexed and cited by AI engines. | Free with Notion account. |
 | **Google Sites** | Free Google-hosted pages. Indexed quickly due to Google domain trust. | Free. |
 | **SlideShare** | Slide-format content with backlinks. | Free. |
+| **beehiiv** | Newsletter platform that auto-generates public pages from sends; their team actively markets these as GEO/AI-discovery surfaces (`product.beehiiv.com/p/ai-discovery`). Parasite-surface play, esp. for local (spin up a newsletter highlighting local businesses). Experimental as of Aug 2026. | Free tier; paid from ~$39/mo. |
+| **Vertical/niche directories** | Get clients listed on the directory the LLMs already favor for that niche (e.g. a med-spa directory cited heavily in ChatGPT). Placement on an already-cited directory > building thin pages yourself. | Varies (often free listing). |
 
 ---
 
@@ -87,8 +89,9 @@ All tools used or referenced across the playbook, deduplicated and grouped by ca
 
 | Service | What it's for | Cost |
 |---------|---------------|------|
-| **ABNewswire** | Press release distribution with SEO-friendly placement. | ~$80–$100/release. |
-| **EIN Presswire** | Press release distribution. Commonly cited in AI engine context. | ~$80–$100/release. |
+| **ABNewswire** | Press release distribution with SEO-friendly placement; syndicates to BarChart/Yahoo (the ChatGPT-cited endpoints are the value, not the wire brand). Note: some operators call it "getting obsolete" (saturation) as of mid-2026 — the BarChart endpoint still performs. | ~$80–$100/release. |
+| **EIN Presswire** | Press release distribution. Commonly cited in AI engine context. Sells 15-packs (~$50/release at bulk). | ~$80–$100/release. |
+| **King Newswire** | Press-release plug named alongside ABNewswire for pushing research/EMD domains. | ~$50–$100/release. |
 | **PR Newswire** | Larger distribution network. Premium pricing. | $350–$800+/release. |
 | **Business Wire** | Enterprise press release distribution. | $400–$1,000+/release. |
 | **Featured.com** | Connect with journalists as a source (expert quotes). | Free (paid tiers for faster access). |
@@ -161,6 +164,8 @@ All tools used or referenced across the playbook, deduplicated and grouped by ca
 | **Wikipedia** | Create or contribute to a relevant Wikipedia article mentioning your brand (where genuinely notable). | Free. |
 | **Google Business Profile** | Local entity signal. | Free. |
 | **Crunchbase / LinkedIn Company Page / Angel.co** | Entity surface area for business organizations. | Free. |
+| **Knowledge-graph + LLM subdomains** (experimental) | Publish an entity/knowledge graph at `graph.<domain>` and an LLM-oriented `llms.<domain>` subdomain (beyond a root `llms.txt`). One operator (groas.com) self-reports a GEO-visibility jump. Cheap to replicate; KG/schema half is well-supported, the `llm.` subdomain is unproven. | Free (self-hosted). |
+| **Cloudflare "Markdown for agents"** | Serve clean Markdown to known LLM crawler UAs to reduce parse friction (`developers.cloudflare.com/fundamentals/reference/markdown-for-agents`). Emerging; costs money on CF — test ROI. | Paid (CF feature). |
 
 ---
 
