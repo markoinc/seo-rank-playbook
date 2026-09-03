@@ -4,10 +4,17 @@
 > natural, human prose: active voice, tight sentences, conversational flow, no em dashes, no
 > banned "AI-tell" words. Use it on any draft before it ships to a client or goes live.
 >
-> **Fidelity rule (important for data-heavy docs):** never alter, drop, or invent a fact, number,
-> table, or product/API name while humanizing. Do NOT fabricate external citations for facts that
-> are already sourced to first-party data (e.g. a DataForSEO pull). Keep proper nouns intact even
-> if they contain a banned word (e.g. DataForSEO's "AI Optimization" endpoint).
+> **Fidelity rule:** never alter, drop, or invent a fact, number, table, or product/API name while
+> humanizing. Keep proper nouns intact even if they contain a banned word (e.g. DataForSEO's
+> "AI Optimization" endpoint).
+>
+> **Citations — which mode you're in:**
+> - **Publishing SEO/article content?** Apply the citation rule fully. Every external fact gets a
+>   real, verifiable source (Title, Publisher, Date, URL). This is how the content earns trust and
+>   AI/Google citations. Never cite a source you didn't verify.
+> - **Editing an analytical/proposal doc whose facts are our own first-party data** (e.g. a
+>   DataForSEO pull, our AI sweep)? Keep the existing data sourcing and do NOT bolt on external
+>   citations — inventing gov/trade URLs for first-party numbers is fabrication.
 
 ---
 
