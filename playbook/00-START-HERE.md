@@ -12,8 +12,9 @@ This file routes you to the right sequence. Pick the runbook that matches your g
 |-----------|---------|
 | **"Build a site that ranks for these keywords"** (greenfield / new domain) | **Runbook A** below, and the ready prompt at `../templates/prompts/build-a-site-that-ranks.md` |
 | **"Make this existing site rank for these keywords"** (site already exists) | **Runbook B** below, and the ready prompt at `../templates/prompts/make-this-site-rank.md` |
+| **"Audit this prospect and give me a proposal"** (client-services / selling the engagement) | **`15-audit-and-proposal.md`** — the deep-audit → scoped-proposal pipeline (then execution runs Runbook B) |
 
-Both runbooks draw on the same discipline SOPs (`01`–`14`); they differ in order and starting point.
+The runbooks draw on the same discipline SOPs (`01`–`14`); they differ in order and starting point. `15` sits on top for anyone auditing a prospect and pricing the work.
 
 ---
 

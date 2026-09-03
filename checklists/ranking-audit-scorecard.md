@@ -172,6 +172,8 @@ After scoring all items, total each category (100 pts max each), then sum for th
 
 ### 2H. AI Citation Rate (10 points)
 
+> For a competitive, quantified read (share-of-voice + citation counts vs named rivals + the AI-Overview grid) rather than this binary yes/no, run `checklists/aeo-visibility-sweep.md`.
+
 | Item | Max pts | Score | Notes |
 |------|---------|-------|-------|
 | Site cited in Google AI Overviews for ≥1 target query | 4 | | |

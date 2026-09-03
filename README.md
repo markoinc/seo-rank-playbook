@@ -43,12 +43,13 @@ Read [`AGENT.md`](AGENT.md) first — it's your operating manual — then [`play
 | 12 | `12-local-seo-gbp.md` | GBP, NAP, local schema, the 65-point local checklist |
 | 13 | `13-programmatic-directory-seo.md` | One template × many rows, mass indexing, uniqueness at scale |
 | 14 | `14-measurement-and-tracking.md` | GSC, AI-visibility sweeps, KPIs, honest caveats |
+| 15 | `15-audit-and-proposal.md` | Prospect → deep audit → scoped, priced proposal (the client-services pipeline) |
 
 ### `templates/` — copy-paste assets
 Per-page SEO data model (`page-seo-data-model.ts`), JSON-LD builder, `robots.txt` (with AI-crawler rules), `llms.txt` example, meta/title formulas, the prerender + deploy pipeline, and ready-to-use agent prompts under `templates/prompts/`.
 
 ### `checklists/` — gates
-`pre-launch-checklist.md`, `on-page-checklist.md`, `technical-crawl-checklist.md`, and the `ranking-audit-scorecard.md`.
+`pre-launch-checklist.md`, `on-page-checklist.md`, `technical-crawl-checklist.md`, the `ranking-audit-scorecard.md` (300-pt grade), and `aeo-visibility-sweep.md` (competitive AI-answer share-of-voice + citation scoring — the deep version of scorecard §2H).
 
 ### `reference/` — fast lookups
 `tools-and-costs.md` (every tool named, what it's for, cost), `thresholds-cheatsheet.md` (every hard number in one table), and `geo-field-notes-advise-2026-09.md` (attributed practitioner intel on AI citation mechanics — the evidence log behind playbook §10 Part 6).
